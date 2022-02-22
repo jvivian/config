@@ -27,6 +27,10 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 " Fast folding
 Plug 'Konfekt/FastFold'
+" Markdown
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Python Extensions
 " Autocomplete
@@ -118,6 +122,9 @@ autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | e
 " toggle nerd tree \f
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
+" Markdown
+let g:vim_markdown_math = 1
+let g:vim_markdown_new_list_item_indent = 2
 
 " Misc Configuration =================================================
 " Colorscheme ---------------
